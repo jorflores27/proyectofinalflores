@@ -1,0 +1,16 @@
+.FooterOrg{
+    @include flex-row-center;
+}
+footer{
+    background-image: linear-gradient(to top, $colorPrincipal,$colorSecundario);
+}
+.FooTi{
+    transition:all 2s;
+    &:hover{
+        transform:translate(10px);
+        cursor: pointer;
+    }
+}
+.FooTi{
+    color: $colorTerciario;
+}

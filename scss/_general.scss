@@ -1,0 +1,42 @@
+.headerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    nav{
+        padding: 0px;
+        ul{
+            display: flex;
+            li{
+                list-style-type: none; 
+                padding: 17px;
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $colorSecundario;
+                }
+            }
+        }
+    }
+}
+
+header{
+    background-image: linear-gradient(to top, $colorPrincipal,$colorSecundario);
+}
+main{
+    background-image: radial-gradient($colorPrincipal, $colorSecundario)
+}
+@media(max-width:768px){
+    ul, .logo, .FooTi, .FooDatos, a, .textPrecio, .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

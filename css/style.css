@@ -1,0 +1,243 @@
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.headerNav nav {
+  padding: 0px;
+}
+.headerNav nav ul {
+  display: flex;
+}
+.headerNav nav ul li {
+  list-style-type: none;
+  padding: 17px;
+}
+.headerNav nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+header {
+  background-image: linear-gradient(to top, dodgerblue, black);
+}
+
+main {
+  background-image: radial-gradient(dodgerblue, black);
+}
+
+@media (max-width: 768px) {
+  ul, .logo, .FooTi, .FooDatos, a, .textPrecio, .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.FooterOrg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  background-image: linear-gradient(to top, dodgerblue, black);
+}
+
+.FooTi {
+  transition: all 2s;
+}
+.FooTi:hover {
+  transform: translate(10px);
+  cursor: pointer;
+}
+
+.FooTi {
+  color: white;
+}
+
+.TituPrin {
+  transition: all 5s;
+}
+.TituPrin:hover {
+  transform: translateY(20px);
+  cursor: pointer;
+}
+
+.TituPrin {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+  padding: 15px;
+}
+
+/*CSS PAGINA DESTINO */
+*{margin: 0px;}
+.headerDestino{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.headerNavegacion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+a:hover{
+  color:yellow;
+  font-size: 30px;
+  background-color: darkslateblue;
+  border-radius: 40px;
+}
+.LiDest{
+  padding: 15px;
+}
+a{text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.GridMainDes{
+  display: grid;
+  grid-template-areas:
+  "TituDes TituDes"
+  "ImgA ImgB"
+  "card-bodyA card-bodyB"
+  "ImgC ImgD"
+  "card-bodyC card-bodyD"
+  "ImgE ImgF"
+  "card-bodyE card-bodyF";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+}
+.TituDes{grid-area: TituDes;}
+.ImgA{grid-area: ImgA;}
+.ImgB{grid-area: ImgB;}
+.ImgC{grid-area: ImgC;}
+.ImgD{grid-area: ImgD;}
+.ImgE{grid-area: ImgE;}
+.ImgF{grid-area: ImgF;}
+.card-bodyA{grid-area: card-bodyA;}
+.card-bodyB{grid-area: card-bodyB;}
+.card-bodyC{grid-area: card-bodyC;}
+.card-bodyD{grid-area: card-bodyD;}
+.card-bodyE{grid-area: card-bodyE;}
+.card-bodyF{grid-area: card-bodyF;}
+.img-fluid{width: 100%; height: auto;}
+.TituDes{
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  padding: 15px;
+}
+.card-title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.card-textDe{
+  color: yellow;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.FooDestino{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.FooDes{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.FooDatos{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* vista mobile */
+@media (max-width: 768px) {
+  .headerDestino, .FooDestino, .GridMainDes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerNavegacion{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-fluid{width: 100%; height: auto;}
+ .TituDes{ font-size: 25px;}
+}
+
+
+h6 {
+  margin: 15px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.card-body {
+  background-image: linear-gradient(to top, dodgerblue, black);
+}
+
+.card-title {
+  color: white;
+  text-align: center;
+}
+
+.card-text {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.textPrecio {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ConInf {
+  text-align: center;
+  color: white;
+}
+
+.Resp {
+  text-align: center;
+}
+
+p {
+  font-weight: 700;
+}
+
+.TextEmp, h6 {
+  color: white;
+  text-align: center;
+}
+
+.TitSec {
+  color: gold;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

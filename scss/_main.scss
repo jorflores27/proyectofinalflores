@@ -1,0 +1,56 @@
+.TituPrin{
+    transition:all 5s;
+    &:hover{
+        transform:translateY(20px);
+        cursor: pointer;
+    }
+}
+.TituPrin{
+    color: $colorSecundario;
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+    padding: 15px;
+}
+h6{
+    margin: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+.card-body{
+    background-image: linear-gradient(to top,$colorPrincipal, $colorSecundario);
+}
+.card-title{
+    color: $colorTerciario;
+    text-align: center;
+}
+.card-text{
+    color: $colorSecundario;
+    font-weight: 600;
+    text-align: center;
+}
+.textPrecio{
+    color: red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.ConInf{
+    text-align: center; 
+    color: $colorTerciario;
+}
+.Resp{
+    text-align: center;
+}
+p{
+    font-weight: 700;
+}
+.TextEmp, h6{
+    color: $colorTerciario;
+    text-align: center;
+}
+.TitSec{
+    color: gold;
+    text-align: center;
+}
